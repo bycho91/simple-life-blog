@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+h1 {
+  color: #143774;
+  font-family: "Lora", sans-serif;
+  margin: 0;
+  font-size: 30px;
+  font-weight: light;
+}
+
+.subheader {
+  color: #1792D2;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+header {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F8F8F8;
+}
+
+.nav-container {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list .nav-list-item .nav-link {
+  text-decoration: none;
+  color: #717171;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 1.5em;
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.nav-list .nav-list-item .nav-link:hover {
+  color: #1792D2;
+}
+
+.nav-list .nav-list-item .nav-link.active {
+  border-bottom: 2px solid #707070;
+}
+
+.nav-list .nav-list-item .nav-link.active:hover {
+  color: #717171;
+  cursor: default;
+}
+
+.main-container {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.main-container .posts-container {
+  width: 75%;
+  height: 100%;
+  outline: 2px solid blue;
+}
+
+.main-container .sidebar-container {
+  width: 20%;
+  height: 100%;
+}
+
+.main-container .sidebar-container .about-me {
+  border: 1rem solid #EBEBEB;
+  margin-bottom: 2em;
+}
+
+.main-container .sidebar-container .about-me .contents {
+  margin: 1.5em;
+  text-align: center;
+}
+
+.main-container .sidebar-container .about-me .contents h3 {
+  color: #143774;
+  font-family: "Lora", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  margin: .5em 0;
+}
+
+.main-container .sidebar-container .about-me .contents img {
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-container .sidebar-container .about-me .contents p {
+  color: #1792D2;
+  font-size: 1.1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: light;
+  text-align: left;
+}
+
+.main-container .sidebar-container .recent-posts {
+  border: 1rem solid #EBEBEB;
+}
+
+.main-container .sidebar-container .recent-posts .contents {
+  margin: 1.5em;
+  text-align: center;
+}
+
+.main-container .sidebar-container .recent-posts .contents h3 {
+  font-family: "Lora", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.main-container .sidebar-container .recent-posts .contents .post-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-container .sidebar-container .recent-posts .contents .post-item p {
+  color: #143774;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */
