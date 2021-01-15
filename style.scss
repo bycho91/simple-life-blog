@@ -99,7 +99,18 @@ header {
 	.posts-container {
 		width: 75%;
 		height: 100%;
-		outline: 2px solid blue;
+
+		.featured-article {
+			img {
+				width: 100%;
+				height: 300px;
+				object-fit: cover;
+				object-position: 50% 80%;
+			}
+		}
+
+
+		.articles {}
 	}
 
 	.sidebar-container {
