@@ -1,184 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
 
 //color variables
-$headerWhite: #F8F8F8;
-$borderWhite: #EBEBEB;
+$headerWhite: #f8f8f8;
+$borderWhite: #ebebeb;
 $headerBlue: #143774;
-$subheaderBlue: #1792D2;
+$subheaderBlue: #1792d2;
 $linkGray: #717171;
 $fontGray: #707070;
 
 //font variables
-$lora: 'Lora', sans-serif;
-$ubuntu: 'Ubuntu', sans-serif;
+$lora: "Lora", sans-serif;
+$ubuntu: "Ubuntu", sans-serif;
 
-html, body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	font-size: 14px;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
 }
 
 // TYPOGRAPHY==================================================
 h1 {
-	color: $headerBlue;
-	font-family: $lora;
-	margin: 0;
-	font-size: 30px;
-	font-weight: light;
+  color: $headerBlue;
+  font-family: $lora;
+  margin: 0;
+  font-size: 30px;
+  font-weight: light;
 }
 
 .subheader {
-	color: $subheaderBlue;
-	font-family: $ubuntu;
-	font-weight: bold;
-	margin: 0;
-	font-size: 14px;
-	text-transform: uppercase;
+  color: $subheaderBlue;
+  font-family: $ubuntu;
+  font-weight: bold;
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 //LAYOUT========================================================
 header {
-	height: 150px;
-	display: flex;
-	align-items: center;
-	background: $headerWhite;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background: $headerWhite;
 }
 .nav-container {
-	width: 70%;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  width: 70%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-list {
-	display: flex;
-	list-style: none;
-	padding: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
 
-	.nav-list-item {
-		
-		.nav-link {
-			text-decoration: none;
-			color: $linkGray;
-			font-family: $ubuntu;
-			text-transform: uppercase;
-			font-weight: bold;
-			margin-left: 1.5em;
-			letter-spacing: 2.5px;
-			font-size: 14px;
-			padding-bottom: .5em;
+  .nav-list-item {
+    .nav-link {
+      text-decoration: none;
+      color: $linkGray;
+      font-family: $ubuntu;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 1.5em;
+      letter-spacing: 2.5px;
+      font-size: 14px;
+      padding-bottom: 0.5em;
 
-			&:hover {
-				color: $subheaderBlue;
-			}
+      &:hover {
+        color: $subheaderBlue;
+      }
 
-			&.active {
-				border-bottom: 2px solid $fontGray;
+      &.active {
+        border-bottom: 2px solid $fontGray;
 
-				&:hover {
-					color: $linkGray;
-					cursor: default;
-				}
-			}
-		}
-	}
+        &:hover {
+          color: $linkGray;
+          cursor: default;
+        }
+      }
+    }
+  }
 }
 
+.detail {
+  color: $fontGray;
+  font-family: $ubuntu;
+  font-weight: light;
+  margin-top: 0.5em;
+}
+
+.continue {
+  text-transform: uppercase;
+  color: $subheaderBlue;
+  font-family: $ubuntu;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.article-title {
+  font-size: 2rem;
+  margin: 0;
+  font-family: $lora;
+}
+
+.article-text {
+  font-size: 1.3rem;
+  font-family: $ubuntu;
+  font-weight: light;
+  color: $fontGray;
+
+  .highlight {
+    font-weight: bold;
+  }
+
+  a {
+    color: $subheaderBlue;
+  }
+}
 
 .main-container {
-	width: 70%;
-	height: 100vh;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 3rem;
+  width: 70%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
 
-	.posts-container {
-		width: 75%;
-		height: 100%;
+  .posts-container {
+    width: 75%;
+    height: 100%;
 
-		.featured-article {
-			img {
-				width: 100%;
-				height: 300px;
-				object-fit: cover;
-				object-position: 50% 80%;
-			}
-		}
+    .featured-article {
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 50% 80%;
+      }
+    }
 
+    .articles-list {
+      .article {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 2em;
+        .left {
+          width: 25%;
+          img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+          }
+        }
 
-		.articles {}
-	}
+        .right {
+          width: 70%;
+          h4 {
+          }
+        }
+      }
+    }
+  }
 
-	.sidebar-container {
-		width: 20%;
-		height: 100%;
-	
+  .sidebar-container {
+    width: 20%;
+    height: 100%;
 
-		.about-me {
-			border: 1rem solid $borderWhite;
-			margin-bottom: 2em;
+    .about-me {
+      border: 1rem solid $borderWhite;
+      margin-bottom: 2em;
 
-			.contents {
-				margin: 1.5em;
-				text-align: center;
-				
-				h3 {
-					color: $headerBlue;
-					font-family: $lora;
-					font-size: 1.5rem;
-					letter-spacing: .2rem;
-					text-transform: uppercase;
-					margin: .5em 0;
-				}
-				img {
-					text-align: center;
-					width: 100%;
-					height: 150px;
-					object-fit: cover;
-				}
-				p {
-					color: $subheaderBlue;
-					font-size: 1.1rem;
-					font-family: $ubuntu;
-					font-weight: light;
-					text-align: left;
-				}
-			}
-		}
+      .contents {
+        margin: 1.5em;
+        text-align: center;
 
-		.recent-posts {
-			border: 1rem solid $borderWhite;
-			.contents {
-				margin: 1.5em;
-				text-align: center;
-				
-				h3 {
-					font-family: $lora;
-					font-size: 1.5rem;
-					letter-spacing: .2rem;
-					text-transform: uppercase;
-					text-align: left;
+        h3 {
+          color: $headerBlue;
+          font-family: $lora;
+          font-size: 1.5rem;
+          letter-spacing: 0.2rem;
+          text-transform: uppercase;
+          margin: 0.5em 0;
+          text-align: left;
+        }
+        img {
+          text-align: center;
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+        }
+        p {
+          color: $subheaderBlue;
+          font-size: 1.1rem;
+          font-family: $ubuntu;
+          font-weight: light;
+          text-align: left;
+        }
+      }
+    }
 
-				}
-				.post-item {
-					img {
-						width: 100%;
-						object-fit: cover;
-					}
+    .recent-posts {
+      border: 1rem solid $borderWhite;
+      .contents {
+        margin: 1.5em;
+        text-align: center;
 
-					p {
-						color: $headerBlue;
-						font-size: 1.2rem;
-						font-family: $ubuntu;
-						font-weight: bold;
-						text-align: left;
-					}
-				}
-			}
-		}
-	}
+        h3 {
+          font-family: $lora;
+          font-size: 1.5rem;
+          letter-spacing: 0.2rem;
+          text-transform: uppercase;
+          text-align: left;
+        }
+        .post-item {
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+
+          p {
+            color: $headerBlue;
+            font-size: 1.2rem;
+            font-family: $ubuntu;
+            font-weight: bold;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,79 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>My Simple Living Blog</title>
-</head>
-<body>
-	<!-- NAVIGATION HEADER -->
-	<header>
-		<div class="nav-container">
-			<div class="logo">
-				<h1>Living the simple life</h1>
-				<p class='subheader'>A blog exploring minimalism in life</p>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Simple Living Blog</title>
+  </head>
+  <body>
+    <!-- NAVIGATION HEADER -->
+    <header>
+      <div class="nav-container">
+        <div class="logo">
+          <h1>Living the simple life</h1>
+          <p class="subheader">A blog exploring minimalism in life</p>
+        </div>
 
-			<div class="links">
-				<ul class='nav-list'>
-					<li class="nav-list-item"><a href="#" class="nav-link active">Home</a></li>
-					<li class="nav-list-item"><a href="#" class="nav-link">About me</a></li>
-					<li class="nav-list-item"><a href="#" class="nav-link">Recent Posts</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
+        <div class="links">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-link">About me</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-link">Recent Posts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-	<!-- MAIN CONTENT -->
-	<div class="main-container">
-		<div class="posts-container">
-			<div class="featured-article">
-				<img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" alt="featured-article-post">
-				<div class="detail">
-					<p>July 23, 2019 | 3 comments</p>
-				</div>
-				<h4>Finding simplicity in life</h4>
-				<p><span class='highlight'>Life can get complicated really quickly</span>, but it doesn't have to be! There are many ways to simply your life, <a href='#'>a few of which we've explored in the past.</a> This week we're taking a bit of an approach though, in how you can find simplicity in the life you are already living.</p>
-				<p class='continue'>Continue reading</p>
-				<hr>
-			</div>
+    <!-- MAIN CONTENT -->
+    <div class="main-container">
+      <div class="posts-container">
+        <div class="featured-article">
+          <img
+            src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+            alt="featured-article-post"
+          />
 
-			<div class="articles"></div>
-		</div>
+          <p class="detail">July 23, 2019 | 3 comments</p>
 
-		<div class="sidebar-container">
-			<div class="about-me">
-				<div class="contents">
-					<h3>About me</h3>
-					<img src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=592&q=80" alt="portrait">
-					<p>I find life better, and I'm happier, when things are nice and simple.</p>
-				</div>
-			</div>
+          <h4 class="article-title">Finding simplicity in life</h4>
+          <p class="article-text">
+            <span class="highlight"
+              >Life can get complicated really quickly</span
+            >, but it doesn't have to be! There are many ways to simply your
+            life,
+            <a href="#">a few of which we've explored in the past.</a> This week
+            we're taking a bit of an approach though, in how you can find
+            simplicity in the life you are already living.
+          </p>
+          <p class="continue">Continue reading</p>
+          <hr />
+        </div>
 
-			<div class="recent-posts">
-				<div class="contents">
-					<h3>Recent Posts</h3>
-					<div class="post-item">
-						<img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="post">
-						<p>Keeping cooking simple</p>
-						<hr>
-					</div>
-					<div class="post-item">
-						<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="post">
-						<p>Simplicity and work</p>
-						<hr>
-					</div>
-					<div class="post-item">
-						<img src="https://images.unsplash.com/photo-1518554372478-7ab26b40390d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="post">
-						<p>Simple decorations</p>
-						<hr>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="articles-list">
+          <div class="article">
+            <div class="left">
+              <img
+                src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                alt="article-image"
+              />
+              <p class="detail">July 23, 2019 | 3 comments</p>
+            </div>
 
+            <div class="right">
+              <h4 class="article-title">Keeping cooking simple</h4>
+              <p class="article-text">
+                Food is a very important part of everyone's life. If you want to
+                be healthy, you have to eat healthy. One of the easiest ways to
+                do that is to keep your cooking nice and simple.
+              </p>
+              <p class="continue">Continue reading</p>
+            </div>
+          </div>
+          <div class="article">
+            <div class="left">
+              <img
+                src="https://images.unsplash.com/photo-1522120691812-dcdfb625f397?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                alt="article-image"
+              />
+              <p class="detail">July 23, 2019 | 3 comments</p>
+            </div>
 
-</body>
+            <div class="right">
+              <h4 class="article-title">Simplicity and work</h4>
+              <p class="article-text">
+                Food is a very important part of everyone's life. If you want to
+                be healthy, you have to eat healthy. One of the easiest ways to
+                do that is to keep your cooking nice and simple. Work is often a
+                major source of stress.
+              </p>
+              <p class="continue">Continue reading</p>
+            </div>
+          </div>
+          <div class="article">
+            <div class="left">
+              <img
+                src="https://images.unsplash.com/photo-1553530979-7ee52a2670c4?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1847&q=80"
+                alt="article-image"
+              />
+              <p class="detail">July 23, 2019 | 3 comments</p>
+            </div>
+
+            <div class="right">
+              <h4 class="article-title">Simple decorations</h4>
+              <p class="article-text">
+                Food is a very important part of everyone's life. If you want to
+                be healthy. A home isn't a home until you've decorated a little.
+              </p>
+              <p class="continue">Continue reading</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-container">
+        <div class="about-me">
+          <div class="contents">
+            <h3>About me</h3>
+            <img
+              src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=592&q=80"
+              alt="portrait"
+            />
+            <p>
+              I find life better, and I'm happier, when things are nice and
+              simple.
+            </p>
+          </div>
+        </div>
+
+        <div class="recent-posts">
+          <div class="contents">
+            <h3>Recent Posts</h3>
+            <div class="post-item">
+              <img
+                src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                alt="post"
+              />
+              <p>Keeping cooking simple</p>
+              <hr />
+            </div>
+            <div class="post-item">
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                alt="post"
+              />
+              <p>Simplicity and work</p>
+              <hr />
+            </div>
+            <div class="post-item">
+              <img
+                src="https://images.unsplash.com/photo-1518554372478-7ab26b40390d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                alt="post"
+              />
+              <p>Simple decorations</p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

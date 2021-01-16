@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -16,7 +17,7 @@ h1 {
 }
 
 .subheader {
-  color: #1792D2;
+  color: #1792d2;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   margin: 0;
@@ -25,18 +26,19 @@ h1 {
 }
 
 header {
-  height: 150px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .nav-container {
   width: 70%;
+  max-width: 1440px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,11 +68,11 @@ header {
   margin-left: 1.5em;
   letter-spacing: 2.5px;
   font-size: 14px;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
 .nav-list .nav-list-item .nav-link:hover {
-  color: #1792D2;
+  color: #1792d2;
 }
 
 .nav-list .nav-list-item .nav-link.active {
@@ -82,8 +84,45 @@ header {
   cursor: default;
 }
 
+.detail {
+  color: #707070;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: light;
+  margin-top: 0.5em;
+}
+
+.continue {
+  text-transform: uppercase;
+  color: #1792d2;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.article-title {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Lora", sans-serif;
+}
+
+.article-text {
+  font-size: 1.3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: light;
+  color: #707070;
+}
+
+.article-text .highlight {
+  font-weight: bold;
+}
+
+.article-text a {
+  color: #1792d2;
+}
+
 .main-container {
   width: 70%;
+  max-width: 1440px;
   height: 100vh;
   margin: 0 auto;
   display: -webkit-box;
@@ -109,13 +148,41 @@ header {
      object-position: 50% 80%;
 }
 
+.main-container .posts-container .articles-list .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2em;
+}
+
+.main-container .posts-container .articles-list .article .left {
+  width: 25%;
+}
+
+.main-container .posts-container .articles-list .article .left img {
+  width: 100%;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-container .posts-container .articles-list .article .right {
+  width: 70%;
+}
+
 .main-container .sidebar-container {
   width: 20%;
   height: 100%;
 }
 
 .main-container .sidebar-container .about-me {
-  border: 1rem solid #EBEBEB;
+  border: 1rem solid #ebebeb;
   margin-bottom: 2em;
 }
 
@@ -128,9 +195,10 @@ header {
   color: #143774;
   font-family: "Lora", sans-serif;
   font-size: 1.5rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
-  margin: .5em 0;
+  margin: 0.5em 0;
+  text-align: left;
 }
 
 .main-container .sidebar-container .about-me .contents img {
@@ -142,7 +210,7 @@ header {
 }
 
 .main-container .sidebar-container .about-me .contents p {
-  color: #1792D2;
+  color: #1792d2;
   font-size: 1.1rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: light;
@@ -150,7 +218,7 @@ header {
 }
 
 .main-container .sidebar-container .recent-posts {
-  border: 1rem solid #EBEBEB;
+  border: 1rem solid #ebebeb;
 }
 
 .main-container .sidebar-container .recent-posts .contents {
@@ -161,7 +229,7 @@ header {
 .main-container .sidebar-container .recent-posts .contents h3 {
   font-family: "Lora", sans-serif;
   font-size: 1.5rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-align: left;
 }
