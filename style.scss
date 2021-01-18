@@ -107,6 +107,11 @@ header {
   font-size: 2rem;
   margin: 0;
   font-family: $lora;
+
+  &.title-light {
+    color: $subheaderBlue;
+    font-size: 1.8rem;
+  }
 }
 
 .article-text {
@@ -236,5 +241,25 @@ header {
         }
       }
     }
+  }
+}
+
+footer {
+  display: flex;
+  place-content: center;
+  background: $headerBlue;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  color: $linkGray;
+
+  .motto {
+    font-weight: bold;
+    font-family: $ubuntu;
+    font-size: 1.2rem;
+  }
+
+  .copyright {
+    margin: 0;
   }
 }
